@@ -60,7 +60,7 @@ const hatchingDistance = pokemons.reduce((distance, pokemon) => {
   return distance
 }, 0)
 
-console.log(`HatchingDistance is: ${hatchingDistance} km`)
+// console.log(`HatchingDistance is: ${hatchingDistance} km`)
 
 /* // Alternative solution
 const hD1 = pokemons
@@ -83,4 +83,30 @@ const heaviestPokemon = pokemons.reduce((heaviest, current) => {
   }
 })
 
-console.log(heaviestPokemon)
+// console.log(heaviestPokemon)
+
+/* // 11 - Categorise pokemons in:
+    common - spawn_chance >= 1
+    rare - spawn_chance >= 0.5 && spawn_chance < 1
+    legendary - spawn_chance <0.5
+ */
+
+const pokemonByRarity = pokemons.reduce((categories, pokemon) => {
+  if(pokemon.spawn_chance >= 1){
+    // console.log(pokemon.name);
+    categories.common.push(pokemon);
+  } else if (pokemon.spawn_chance >= 0.5){
+    // console.log(pokemon.name);
+    categories.rare.push(pokemon);
+  } else {
+    // console.log(pokemon.name);
+    categories.legendary.push(pokemon);
+  }
+  return categories
+}, {
+  common: [],
+  rare: [],
+  legendary: [],
+})
+
+console.log(pokemonByRarity)
