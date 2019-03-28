@@ -4,9 +4,9 @@
 #####
 ### Methods covered:
 ####
-##### array.push()
-##### array.map()
-##### array.filter()
-##### array.reduce()
-#####
-##### parseFloat()
+* array.push()
+* array.map()
+* array.filter()
+* array.reduce()
+*
+* parseFloat()
