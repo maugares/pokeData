@@ -1,0 +1,23 @@
+{
+  "name": "W2D4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maugares/pokeData.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maugares/pokeData/issues"
+  },
+  "homepage": "https://github.com/maugares/pokeData#readme",
+  "dependencies": {
+    "jest": "^24.5.0"
+  }
+}
